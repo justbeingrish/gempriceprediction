@@ -14,7 +14,7 @@ from xgboost import XGBRegressor
 from sklearn.ensemble import VotingRegressor
 from sklearn.metrics import r2_score, mean_absolute_error, mean_squared_error
 
-from src.exception import CustomException
+from exception import CustomException
 from src.logger import logging
 from src.utils import save_object
 from src.utils import evaluate_models

@@ -1,6 +1,6 @@
 from flask import Flask, request, render_template,jsonify
 from flask_cors import CORS,cross_origin
-from src.pipeline.predict_pipeline import CustomData, PredictPipeline
+from pipeline.predict_pipeline import CustomData, PredictPipeline
 
 application = Flask(__name__)
 
@@ -62,4 +62,4 @@ def predict_api():
         return jsonify(dct)
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8000)
+    app.run(host='0.0.0.0', port=8000,debug='True')

@@ -1,14 +1,14 @@
 # Import all the required libraries
 import os
 import sys
-from src.exception import CustomException
+from exception import CustomException
 from src.logger import logging
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from dataclasses import dataclass
 
-from src.components.data_transformation import DataTransformation, DataTransformationConfig
-from src.components.model_trainer import ModelTrainer, ModelTrainerConfig
+from data_transformation import DataTransformation, DataTransformationConfig
+from model_trainer import ModelTrainer, ModelTrainerConfig
 
 # Initialize Data Ingestion Configuration
 @dataclass
